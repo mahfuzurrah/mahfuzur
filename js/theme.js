@@ -156,7 +156,7 @@
   // Image on Modal
   $("document").ready(function () {
     $(".portfolio-filter").magnificPopup({
-      delegate: "a",
+      delegate: "a.popup-ajax",
       type: "image",
       tLoading:
         '<div class="preloader"><div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div></div>',
