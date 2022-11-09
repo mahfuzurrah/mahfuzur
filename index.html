@@ -815,9 +815,8 @@
                                 Let's talk about everything!
                             </h2>
                             <form id="contact-form">
-                                <!-- <div class="row g-4" action="mail.php" method="post"> -->
-                                <!-- <div class="row g-4" onsubmit="sentEmail(); reset(); return fales;"> -->
-                                    <!-- <div class="col-xl-6">
+                                <div class="row g-4" onsubmit="SendEmail(); reset(); return fales;">
+                                    <div class="col-xl-6">
                                         <input name="name" id="name" type="text" class="form-control" required
                                             placeholder="Name" />
                                     </div>
@@ -833,27 +832,14 @@
                                         <textarea name="form-message" id="message" class="form-control" rows="5"
                                             required placeholder="Tell us more about your needs........"></textarea>
                                     </div>
-                                </div> -->
-                                <form action="mail.php" method="post">
-                                    <label for="name">Your Name</label>
-                                    <input type="text" name="name" placeholder="Your name..">
-                            
-                                    <label for="lname">Email</label>
-                                    <input type="email" name="email" placeholder="Your email..">
-                            
-                                    <label for="message">Message</label>
-                                    <textarea name="message" placeholder="Write something.." style="height:200px"></textarea>
-                            
-                                    <input type="submit" value="Submit">
-                                </form>
+                                    <p class="text-center mt-4 mb-0">
+                                        <button id="submit-btn" class="btn btn-primary rounded-pill d-inline-flex"
+                                            type="submit">
+                                            Send Message
+                                        </button>
+                                    </p>
+                                </div>
 
-                                <p class="text-center mt-4 mb-0">
-                                    <button id="submit-btn" class="btn btn-primary rounded-pill d-inline-flex"
-                                        type="submit">
-                                        Send Message
-                                    </button>
-                                </p>
-                            </form>
                         </div>
                     </div>
                 </div>
@@ -1073,8 +1059,6 @@
     <script src="js/theme.js"></script>
     <script id="google-recaptcha-v3"
         src="https://www.google.com/recaptcha/api.js?render=6LcmyrcZAAAAAIHP9WnJyuxn9vBiiro6WRpITEsQ"></script>
-
-        
 </body>
 
 </html>
