@@ -815,7 +815,8 @@
                                 Let's talk about everything!
                             </h2>
                             <form id="contact-form">
-                                <div class="row g-4" onsubmit="sentEmail(); reset(); return fales;">
+                                <div class="row g-4" action="mail.php" method="post">
+                                <!-- <div class="row g-4" onsubmit="sentEmail(); reset(); return fales;"> -->
                                     <div class="col-xl-6">
                                         <input name="name" id="name" type="text" class="form-control" required
                                             placeholder="Name" />
